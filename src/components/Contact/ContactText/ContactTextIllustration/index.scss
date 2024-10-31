@@ -1,0 +1,20 @@
+.contact-text-illustration {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: calc(1028px + 72px)) {
+    // .contact-text-illustration {
+    //     height: 336px;
+    // }
+}
+
+@media all and (max-width: calc(594px + 56px)) {
+    .contact-text-illustration {
+        width: 100%;
+        height: unset;
+        padding: 60px 0 18px 0;
+    }
+}

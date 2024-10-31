@@ -1,0 +1,13 @@
+.btn {
+    &-primary {
+        background: var(--dark);
+        color: var(--white);
+        border-color: transparent;
+    }
+
+    &-secondary {
+        background: var(--white);
+        color: var(--dark);
+        border-color: var(--dark);
+    }
+}

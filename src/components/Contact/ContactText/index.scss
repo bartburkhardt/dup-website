@@ -1,0 +1,48 @@
+.contact-text {
+    width: 50%;
+    height: 594px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-field {
+        margin-left: 36px;
+    }
+    & > .titleContainer {
+        margin: 0 0 100px 40px;
+    }
+}
+
+@media all and (max-width: calc(1146px + 200px)) {
+    .contact-text {
+        height: calc(100% + 40px);
+    }
+}
+
+@media all and (max-width: calc(1028px + 72px)) {
+    .contact-text {
+        // height: 659px;
+
+        .title-container {
+            width: 300px;
+        }
+    }
+}
+
+@media all and (max-width: calc(594px + 56px)) {
+    .contact-text {
+        width: 100%;
+        height: unset;
+
+        &-field {
+            margin: 0;
+            padding: 0 0 32px 0;
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+    }
+    
+}

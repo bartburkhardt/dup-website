@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    gap: 8px;
+
+    .button {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-underline-offset: 6px;
+        padding: 0;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+
+        img {
+            margin-top: 19px;
+            height: fit-content;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            color: var(--dark);
+        }
+    }
+}
+
+@media all and (max-width: calc(594px + 56px)) {
+    .button {
+        img {
+            margin-top: 16px !important;
+        }
+        p {
+            font-size: 14px !important;
+        }
+    }
+}
