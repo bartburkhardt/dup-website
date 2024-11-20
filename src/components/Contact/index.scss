@@ -8,14 +8,14 @@
 
     .contact-section {
         width: 100%;
-        max-width: 1146px;
+        max-width: var(--max-width);
         display: flex;
         justify-content: space-between;
         gap: 30px;
     }
 }
 
-@media all and (max-width: calc(1146px + 200px)) {
+@media all and (max-width: calc(var(--max-width) + 200px)) {
     .contact-section-wrapper {
         padding: 140px 100px;
     }

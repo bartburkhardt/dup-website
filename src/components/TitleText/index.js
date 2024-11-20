@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 
 import "./TitleText.scss";
 
-export default function TitleText({ useId, redText, titleText }) {
+export default function TitleText({
+  useId,
+  redText,
+  titleText,
+  immediateAnimation = false,
+}) {
   const text = useId.replace(" ", "-");
 
   const animateText = () => {
@@ -11,7 +16,10 @@ export default function TitleText({ useId, redText, titleText }) {
     const titleTextContainer = document.getElementById(`${text}-title`);
 
     // animate text & title
-    if (window.scrollY > redTextContainer.offsetTop - 600) {
+    if (
+      window.scrollY > redTextContainer.offsetTop - 700 ||
+      immediateAnimation
+    ) {
       redTextContainer.classList.add("animation-y-axis");
       setTimeout(() => {
         titleTextContainer.classList.add("animation-y-axis");
@@ -21,6 +29,10 @@ export default function TitleText({ useId, redText, titleText }) {
 
   useEffect(() => {
     window.addEventListener("scroll", animateText);
+  }, []);
+
+  useEffect(() => {
+    animateText();
   }, []);
 
   return (

@@ -130,7 +130,7 @@
     }
 }
 
-@media all and (max-width: calc(1146px + 200px)) {
+@media all and (max-width: calc(var(--max-width) + 200px)) {
     .contact-form {
         &-content {
             &-shape {

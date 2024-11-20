@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { useTranslation } from "react-i18next";
 
-import _ from "lodash";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel, Pagination } from "swiper/modules";
 
@@ -13,8 +11,10 @@ import "swiper/css/pagination";
 import "./index.scss";
 
 export default function Products() {
-  const { t } = useTranslation();
-  const products = t("products", { returnObjects: true });
+  const { t, i18n } = useTranslation();
+  const [products, setProducts] = useState(
+    t("products", { returnObjects: true })
+  );
 
   const swiperRef = useRef();
 
@@ -56,6 +56,10 @@ export default function Products() {
     window.addEventListener("scroll", toggleScroll);
   }, []);
 
+  useEffect(() => {
+    setProducts(t("products", { returnObjects: true }));
+  }, [i18n.language]);
+
   return (
     <div className="products">
       <Swiper
@@ -72,22 +76,45 @@ export default function Products() {
         className="swiper products-swiper"
         ref={swiperRef}
       >
-        {products.map((prod, p) => {
+        {new Array(Math.ceil(products.length / 2)).fill().map((prod, p) => {
+          const item = p + p;
+
           return (
-            <SwiperSlide
-              key={p}
-              style={{
-                backgroundImage: `url(${require(`../../assets/images/${
-                  prod.img ? prod.img : "art-impression"
-                }.png`)})`,
-              }}
-            >
-              <div className="swiper-slide-header">
-                <h1>{prod.title}</h1>
+            <SwiperSlide key={p}>
+              <div
+                className="swiper-slide-left"
+                style={{
+                  backgroundImage: `url(${require(`../../assets/images/${
+                    products[item].img ? products[item].img : "art-impression"
+                  }.png`)})`,
+                }}
+              >
+                <div className="swiper-slide-left-header">
+                  <h1>{products[item].title}</h1>
+                </div>
+                <div className="swiper-slide-left-content">
+                  <span>{products[item].text}</span>
+                </div>
               </div>
-              <div className="swiper-slide-content">
-                <span>{prod.text}</span>
-              </div>
+              {products[item + 1] && (
+                <div
+                  className="swiper-slide-right"
+                  style={{
+                    backgroundImage: `url(${require(`../../assets/images/${
+                      products[item + 1].img
+                        ? products[item + 1].img
+                        : "art-impression"
+                    }.png`)})`,
+                  }}
+                >
+                  <div className="swiper-slide-right-header">
+                    <h1>{products[item + 1].title}</h1>
+                  </div>
+                  <div className="swiper-slide-right-content">
+                    <span>{products[item + 1].text}</span>
+                  </div>
+                </div>
+              )}
             </SwiperSlide>
           );
         })}

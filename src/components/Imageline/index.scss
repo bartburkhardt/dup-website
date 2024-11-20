@@ -1,0 +1,47 @@
+.imageline-wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.imageline {
+    position: relative;
+    width: 120%;
+    height: 100%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        height: 50%;
+        width: var(--max-width);
+        display: flex;
+        justify-self: center;
+        z-index: 1;
+    }
+
+    &::before {
+        background: url("../../assets/images/imageline-foreground-1.svg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+
+    &::after {
+        background: url("../../assets/images/imageline-foreground-2.svg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+    }
+    
+    &-image {
+        background-position: center center;
+        background-size: auto 100% !important;
+        background-repeat: no-repeat;
+    }
+}

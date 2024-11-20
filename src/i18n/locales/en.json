@@ -15,36 +15,34 @@
   "targetAudience": {
     "title": "Doelgroepen DUP Lab",
     "items": [
-      "<b>Inwoners van stadsdeel Zuidoost</b><br>(ons focusgebied)",
-      "<b>Jongeren uit Zuidoost</b><br>(unusual suspects)",
-      "<b>Inwoners van Amsterdam</b><br>(bij tools die we opschalen)",
-      "<b>Collega's</b><br>(professionals Ruimtelijke inrichting & maatschappelijke programmering)",
-      "<b>Bloomberg Philanthropies programma</b><br>(Wereldwijde kennisdeling)"
+      [
+        "Inwoners van stadsdeel Zuidoost",
+        "(ons focusgebied)"
+      ],
+      [
+        "Jongeren uit Zuidoost",
+        "(unusual suspects)"
+      ],
+      [
+        "Inwoners van Amsterdam",
+        "(bij tools die we opschalen)"
+      ],
+      [
+        "Collega's",
+        "(professionals Ruimtelijke inrichting & maatschappelijke programmering)"
+      ],
+      [
+        "Bloomberg Philanthropies programma",
+        "(Wereldwijde kennisdeling)"
+      ]
     ]
   },
-  "sellingPoints": [
-    {
-      "title": "Innovatieve benadering",
-      "text": " DUP Lab neemt een innovatieve benadering aan bij stedelijke ontwikkeling, waarbij digitale tools en participatieve methoden worden gebruikt om bewoners-betrokkenheid te vergroten en transparantie te bevorderen."
-    },
-    {
-      "title": "Focus op burgerparticipatie",
-      "text": " De nadruk ligt op bewonersparticipatie en het actief betrekken van bewoners bij ontwerpvoorstellen en besluitvormingsprocessen. Daarbij ligt de nadruk op bewonersgroepen die we momenteel moeilijker bereiken, zoals jongeren. We geloven dat samenwerken met bewoners het vertrouwen in de overheid versterkt en zorgt voor meer inclusieve en democratische stadsontwikkeling."
-    },
-    {
-      "title": "Multidisciplinaire (integrale) samenwerking",
-      "text": "DUP Lab werkt samen met diverse belanghebbenden, waaronder andere teams binnen de overheid, gemeenschapsorganisaties en externe partners. Deze multidisciplinaire aanpak zorgt voor een breed scala aan perspectieven en expertise, wat resulteert in meer holistische en effectieve oplossingen. Het DUP Lab gaat bewust op zoek naar andere manieren van kijken en nieuwe methoden om samen aan de stad van de toekomst te werken."
-    },
-    {
-      "title": "Flexibel & Experimenteel",
-      "text": "De ruimte krijgen - en nemen - om te experimenteren is belangrijk voor DUP Lab. De gedachte hierachter is dat de informatie die experimenten bieden -vooral wanneer de uitkomsten anders zijn dan verwacht- van onschatbare waarde zijn. Deze flexibele aanpak stelt DUP Lab in staat om snel te reageren op veranderende omstandigheden, nieuwe ideeën uit te proberen en tot meer innovatieve en adaptieve oplossingen te komen."
-    },
-    {
-      "title": "Internationale samenwerking, lokale focus",
-      "text": "Als onderdeel van het Bloomberg Philanthropies programma wisselt DUP Lab kennis uit met andere wereldsteden, waardoor ze kunnen profiteren van internationale best practices en lessen kunnen delen met andere steden. Amsterdam Zuidoost is momenteel het focusgebied van DUP Lab."
-    }
-  ],
   "products": [
+    {
+      "img": "future_mirror_1",
+      "title": "Future Mirror",
+      "text": "In samenwerking met het Concept Team hebben we een nieuwe manier van informatie delen bedacht. Door middel van een tweetalige video op het scherm proberen we zo veel mogelijk bewoners te bereiken over de nieuwe ontwikkelingen in de ArenaPoort en over Cluster 7, één van de nieuwe woningprojecten in dit gebied."
+    },
     {
       "img": "",
       "title": "Woonmonitor",
@@ -63,7 +61,7 @@
     {
       "img": "",
       "title": "Curbanisme",
-      "text": "een 'user-centered' methode die het gebruik, de identiteit en daarmee de huidige kwaliteiten en aandachtspunten van een gebied in kaart brengt. Deze inzichten zullen bij de stedelijke (door)ontwikkeling van het gebied zorgen voor plannen die beter voortbouwen op het bestaande. Middels participatieve werkvormen zorgt het op een laagdrempelige manier voor betrokkenheid van bewoners en kan de impact van top-down belangen bewuster afgewogen worden ten opzichte van lokale wensen."
+      "text": "Een 'user-centered' methode die het gebruik, de identiteit en daarmee de huidige kwaliteiten en aandachtspunten van een gebied in kaart brengt. Deze inzichten zullen bij de stedelijke (door)ontwikkeling van het gebied zorgen voor plannen die beter voortbouwen op het bestaande. Middels participatieve werkvormen zorgt het op een laagdrempelige manier voor betrokkenheid van bewoners en kan de impact van top-down belangen bewuster afgewogen worden ten opzichte van lokale wensen."
     },
     {
       "img": "",
@@ -71,30 +69,56 @@
       "text": "HOA Fair is een 3 daags festival verspreid over 3 momenten in 2024. Het wordt georganiseerd door de Kazerne Reigersbos en Sankova archives in samenwerking en ondersteuning met het DUP Lab en tal van andere partijen. Deze driedaagse serie biedt een gevarieerd programma waarin kunst, cultuur en kennis rond maatschappelijke thema's op verschillende locaties in Amsterdam samenkomen. Het initiatief voor de “HOA Fair 2024” komt van de gemeenschap zelf. Er is een sterke behoefte aan erkenning en empowerment om Amsterdam Zuidoost en Amsterdam als geheel vorm te geven."
     }
   ],
+  "sellingPoints": {
+    "title": "De ambitie van <u>Digital Urban Planning</u> is om uiteindelijk in de hele stad samen met bewoners aan hun leefomgeving te werken.",
+    "text": "Hoe we dit doen:",
+    "items": [
+      {
+        "title": "Innovatieve benadering",
+        "text": " DUP Lab neemt een innovatieve benadering aan bij stedelijke ontwikkeling, waarbij digitale tools en participatieve methoden worden gebruikt om bewoners-betrokkenheid te vergroten en transparantie te bevorderen."
+      },
+      {
+        "title": "Focus op burgerparticipatie",
+        "text": " De nadruk ligt op bewonersparticipatie en het actief betrekken van bewoners bij ontwerpvoorstellen en besluitvormingsprocessen. Daarbij ligt de nadruk op bewonersgroepen die we momenteel moeilijker bereiken, zoals jongeren. We geloven dat samenwerken met bewoners het vertrouwen in de overheid versterkt en zorgt voor meer inclusieve en democratische stadsontwikkeling."
+      },
+      {
+        "title": "Multidisciplinaire (integrale) samenwerking",
+        "text": "DUP Lab werkt samen met diverse belanghebbenden, waaronder andere teams binnen de overheid, gemeenschapsorganisaties en externe partners. Deze multidisciplinaire aanpak zorgt voor een breed scala aan perspectieven en expertise, wat resulteert in meer holistische en effectieve oplossingen. Het DUP Lab gaat bewust op zoek naar andere manieren van kijken en nieuwe methoden om samen aan de stad van de toekomst te werken."
+      },
+      {
+        "title": "Flexibel & Experimenteel",
+        "text": "De ruimte krijgen - en nemen - om te experimenteren is belangrijk voor DUP Lab. De gedachte hierachter is dat de informatie die experimenten bieden -vooral wanneer de uitkomsten anders zijn dan verwacht- van onschatbare waarde zijn. Deze flexibele aanpak stelt DUP Lab in staat om snel te reageren op veranderende omstandigheden, nieuwe ideeën uit te proberen en tot meer innovatieve en adaptieve oplossingen te komen."
+      },
+      {
+        "title": "Internationale samenwerking, lokale focus",
+        "text": "Als onderdeel van het Bloomberg Philanthropies programma wisselt DUP Lab kennis uit met andere wereldsteden, waardoor ze kunnen profiteren van internationale best practices en lessen kunnen delen met andere steden. Amsterdam Zuidoost is momenteel het focusgebied van DUP Lab."
+      }
+    ]
+  },
   "form": {
     "name": {
-      "label": "Name*",
-      "placeholder": "Add your name here"
+      "label": "Naam*",
+      "placeholder": "Typ uw naam hier"
     },
     "email": {
-      "label": "Email address*",
-      "placeholder": "eg. myemail@amsterdam.nl"
+      "label": "Email adres*",
+      "placeholder": "Bijv. mijnemail@amsterdam.nl"
     },
     "message": {
-      "label": "Message*",
-      "placeholder": "Describe your idea in a short paragraph"
+      "label": "Bericht*",
+      "placeholder": "Beschrijf uw idee in het kort"
     },
-    "send": "Send",
-    "requestmeeting": "Request a meeting"
+    "send": "Verstuur",
+    "requestmeeting": "Vraag een meeting aan"
   },
   "footer": {
-    "over": "About the site",
+    "over": "Over deze site",
     "cookies": "Cookies",
     "privacy": "Privacy"
   },
   "cookies": {
-    "accept": "Accept",
-    "reject": "Reject",
-    "text": "We use cookies to enhance your experience and analyse the site traffic. Read more about "
+    "accept": "Accepteren",
+    "reject": "Afwijzen",
+    "text": "Wij gebruiken cookies om de gebruikerservaring te verbeteren en analyses te doen op basis van gebruik van de website. Lees meer over "
   }
 }

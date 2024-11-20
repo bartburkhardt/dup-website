@@ -1,6 +1,6 @@
 .contact-text {
     width: 50%;
-    height: 594px;
+    height: 614px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     }
 }
 
-@media all and (max-width: calc(1146px + 200px)) {
+@media all and (max-width: calc(var(--max-width) + 200px)) {
     .contact-text {
         height: calc(100% + 40px);
     }

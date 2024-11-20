@@ -10,6 +10,7 @@ import Products from "../../components/Products";
 import Contact from "../../components/Contact";
 
 import "./HomePage.scss";
+import Imageline from "../../components/Imageline";
 
 function Home() {
   const { t } = useTranslation();
@@ -20,9 +21,10 @@ function Home() {
     <>
       <SubHeader />
       <Goal />
-      <Points title={targetAudience.title} items={targetAudience.items} />
       <Products />
       <SellingPoints />
+      <Points title={targetAudience.title} items={targetAudience.items} />
+      <Imageline />
       <Contact />
     </>
   );

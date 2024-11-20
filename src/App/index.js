@@ -31,12 +31,6 @@ export default function App() {
     // Set language
     setLanguage();
 
-    // Set scroll to 0
-    window.scrollTo(0, 1);
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 50);
-
     // Set title of tab
     document.title = "Digital Urban Planning";
   }, []);

@@ -1,7 +1,5 @@
 import React from "react";
 
-import DOMPurify from "dompurify";
-
 import "./index.scss";
 
 export default function Points({ title, items }) {
@@ -12,9 +10,8 @@ export default function Points({ title, items }) {
         {items.map((item, i) => {
           return (
             <div className="point-item" key={i}>
-              <span
-                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item) }}
-              />
+              <span>{item[0]}</span>
+              <span>{item[1]}</span>
             </div>
           );
         })}

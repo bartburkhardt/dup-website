@@ -15,6 +15,7 @@ export default function Goal() {
                 useId={i18n.getResource('en', 'translation', 'titleText.goal.redText')}
                 redText={t("titleText.goal.redText")}
                 titleText={t("titleText.goal.titleText")}
+                immediateAnimation={true}
             />
             <h3 className="goal-text">{t("goalText")}</h3>
         </div>

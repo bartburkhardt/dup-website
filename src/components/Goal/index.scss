@@ -1,9 +1,9 @@
 .goal {
     width: 100%;
-    max-width: 1146px;
+    max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
-    padding-top: 152px;
+    padding: 152px 0;
     box-sizing: border-box;
 
     &-text {
@@ -15,7 +15,7 @@
     }
 }
 
-@media all and (max-width: calc(1146px + 200px)) {
+@media all and (max-width: calc(var(--max-width) + 200px)) {
     .goal {
         padding: 104px 100px 0 100px;
     }
