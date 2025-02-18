@@ -13,7 +13,9 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
-        transition: margin 0.5s ease-out, opacity 0.5s ease-out;
+        transition:
+            margin 0.5s ease-out,
+            opacity 0.5s ease-out;
         opacity: 0;
     }
 
@@ -27,40 +29,13 @@
         font-weight: 700;
         line-height: 55px;
         color: var(--dark);
-        transition: margin 0.5s ease-out, opacity 0.5s ease-out;
+        transition:
+            margin 0.5s ease-out,
+            opacity 0.5s ease-out;
         opacity: 0;
 
         .dot {
             color: var(--primary-red);
         }
-    }
-}
-
-@media all and (max-width: calc(var(--max-width) + 200px)) {
-    .title-container {
-        .title-text {
-            font-size: 40px;
-            line-height: 44px;
-        }
-    }
-}
-
-@media all and (max-width: calc(594px + 56px)) {
-    .title-container {
-        width: 100%;
-        
-        .red-text {
-            font-size: 16px;
-            line-height: 20px;
-        }
-
-        .title-text-container {
-            height: 32px;
-        }
-        .title-text {
-            width: 100%;
-            font-size: 32px;
-            line-height: 40px;
-        } 
     }
 }

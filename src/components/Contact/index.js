@@ -6,23 +6,23 @@ import ContactText from "./ContactText";
 import "./index.scss";
 
 export default function Contact() {
-    const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-    const changeDevice = () => {
-        setIsMobile(window.innerWidth <= 650 ? true : false);
-    }
+  const changeDevice = () => {
+    setIsMobile(window.innerWidth <= 700 ? true : false);
+  };
 
-    useEffect(() => {
-        changeDevice();
-        window.addEventListener("resize", changeDevice);
-    }, []);
+  useEffect(() => {
+    changeDevice();
+    window.addEventListener("resize", changeDevice);
+  }, []);
 
-    return (
-        <div className="contact-section-wrapper">
-            <div className="contact-section">
-                <ContactForm hideByDefault={isMobile} />
-                <ContactText />
-            </div>
-        </div>
-    )
+  return (
+    <div className="contact-section-wrapper">
+      <div className="contact-section">
+        <ContactForm hideByDefault={isMobile} />
+        <ContactText />
+      </div>
+    </div>
+  );
 }

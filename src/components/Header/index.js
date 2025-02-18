@@ -11,12 +11,15 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [Logo, setLogo] = useState(bigLogo);
+  const [name, setName] = useState("Digital Urban Planning");
 
   function replaceLogo() {
-    if (window.innerWidth <= 650) {
+    if (window.innerWidth <= 700) {
       setLogo(mobileLogo);
+      setName("DUP");
     } else {
       setLogo(bigLogo);
+      setName("Digital Urban Planning");
     }
   }
 
@@ -54,7 +57,7 @@ export default function Header() {
       <Link className="header-left" to={`/`}>
         <img src={Logo} alt="..." />
         {/* <img src={mobileLogo} alt="..." /> */}
-        <h1>Digital Urban Planning</h1>
+        <h1>{name}</h1>
       </Link>
       <Navigation />
     </div>

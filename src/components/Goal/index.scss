@@ -1,6 +1,5 @@
 .goal {
     width: 100%;
-    max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
     padding: 152px 0;
@@ -12,54 +11,5 @@
         font-weight: 400;
         line-height: 28px;
         margin: 44px 0 0 0;
-    }
-}
-
-@media all and (max-width: calc(var(--max-width) + 200px)) {
-    .goal {
-        padding: 104px 100px 0 100px;
-    }
-}
-
-@media all and (max-width: calc(1028px + 72px)) {
-    .goal {
-        padding: 115px 36px 64px 36px;
-        gap: 16px;
-        justify-content: space-around;
-
-        &-text {
-            width: 340px;
-            height: 130px;
-            font-size: 16px;
-            line-height: 26px;
-        }
-    }
-}
-
-@media all and (max-width: calc(594px + 56px)) {
-    .goal {
-        flex-wrap: wrap;
-        padding: 80px 28px 40px 28px;
-
-        .title-text {
-            font-size: 28px !important;
-            line-height: 32px !important;
-            margin-bottom: 0 !important;
-        }
-
-        &-text {
-            width: 100%;
-            margin-top: 0;
-            line-height: 24px;
-        }
-    }
-}
-
-@media all and (max-width: calc(264px + 56px)) {
-    .goal {
-        .title-text {
-            width: 264px;
-            line-height: 34px !important;
-        }
     }
 }

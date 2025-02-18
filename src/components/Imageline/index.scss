@@ -1,5 +1,6 @@
 .imageline-wrapper {
     width: 100%;
+    max-width: 1800px;
     overflow: hidden;
     height: 300px;
 }
@@ -20,7 +21,6 @@
         position: absolute;
         top: 25%;
         height: 50%;
-        width: var(--max-width);
         display: flex;
         justify-self: center;
         z-index: 1;

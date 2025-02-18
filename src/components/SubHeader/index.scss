@@ -44,7 +44,7 @@
             line-height: 28px;
             font-weight: 400;
             padding: 10px 16px;
-            border-color:transparent;
+            border-color: transparent;
             font-family: "AmsterdamSans", Arial, sans-serif;
             transition: background 0.2s ease-out;
             cursor: pointer;
@@ -52,50 +52,6 @@
             &:hover {
                 background: #767676;
             }
-        }
-    }
-}
-
-@media all and (max-width: calc(1028px + 72px)) {
-    .sub-header-container {
-        &-text {
-            h1 {
-                font-size: 40px;
-                line-height: 44px;
-            }
-            p {
-                font-size: 18px;
-                line-height: 28px;
-            }
-        }
-    }
-}
-
-@media all and (max-width: calc(594px + 56px)) {
-    .sub-header-container {
-        padding: 64px 36px;
-
-        &-text {
-            h1 {
-                font-size: 28px;
-                line-height: 34px;
-                margin-bottom: 16px;
-            }
-        }
-    }
-}
-
-@media all and (max-width: calc(264px + 56px)) {
-    .sub-header-container {
-        padding: 64px 28px;
-        &-text {
-            p {
-                margin-bottom: 32px;
-            }
-        }
-
-        .banner-animation {
-            width: 120%;
         }
     }
 }

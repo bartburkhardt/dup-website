@@ -1,7 +1,6 @@
 .audience {
-    max-width: var(--max-width);
     width: 100%;
-    padding: 160px 20px 0 20px;
+    padding: 160px 0 0 0;
     display: flex;
     box-sizing: border-box;
 
@@ -10,6 +9,9 @@
 
         .audience-left {
             padding: 0 0 0 7rem;
+        }
+        .audience-text {
+            padding: 0 1.25rem 0 0;
         }
     }
 

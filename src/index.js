@@ -11,6 +11,7 @@ import "./assets/scss/icons.scss";
 import "./assets/scss/fonts.scss";
 import "./assets/scss/variables.scss";
 import "./assets/scss/buttons.scss";
+import "./assets/scss/mediaQueries.scss";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

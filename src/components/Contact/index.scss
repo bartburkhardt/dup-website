@@ -3,41 +3,13 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, rgba(230, 230, 230, 0) 80%, rgba(230, 230, 230, 0.3) 100%);
-    padding: 150px 150px 190px 150px;
+    padding: 150px 0 190px 0;
     box-sizing: border-box;
 
     .contact-section {
         width: 100%;
-        max-width: var(--max-width);
         display: flex;
         justify-content: space-between;
         gap: 30px;
-    }
-}
-
-@media all and (max-width: calc(var(--max-width) + 200px)) {
-    .contact-section-wrapper {
-        padding: 140px 100px;
-    }
-}
-
-@media all and (max-width: calc(1028px + 72px)) {
-    .contact-section-wrapper {
-        padding: 120px 36px;
-    }
-    .contact-section {
-        justify-content: center !important;
-    }
-}
-
-@media all and (max-width: calc(594px + 56px)) {
-    .contact-section-wrapper {
-        padding: 80px 28px 32px 28px;
-    }
-}
-
-@media all and (max-width: calc(264px + 56px)) {
-    .contact-section {
-        margin: 0 28px;
     }
 }

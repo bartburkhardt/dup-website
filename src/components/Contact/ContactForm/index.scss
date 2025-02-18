@@ -12,7 +12,7 @@
             width: 40px;
             height: 40px;
             bottom: -38px;
-            right: -0.5px;
+            right: 0;
             background: var(--white);
             border-right: 1px solid var(--dark);
 
@@ -123,41 +123,6 @@
 
                     path {
                         stroke: var(--white);
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media all and (max-width: calc(var(--max-width) + 200px)) {
-    .contact-form {
-        &-content {
-            &-shape {
-                right: 0.4px;
-            }
-        }
-    }
-}
-
-@media all and (max-width: calc(1028px + 72px)) {
-    .contact-form {
-        width: 438px;
-
-        &-idea,
-        &-more {
-            form {
-                label {
-                    input,
-                    textarea {
-                        font-size: 16px;
-                        line-height: 24px;
-                    }
-                }
-
-                .checkbox {
-                    label {
-                        font-size: 16px;
                     }
                 }
             }

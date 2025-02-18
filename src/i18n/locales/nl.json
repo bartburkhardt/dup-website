@@ -15,14 +15,14 @@
   "targetAudience": {
     "title": "Doelgroepen DUP Lab",
     "items": [
-      ["Inwoners van stadsdeel Zuidoost", "(ons focusgebied)"],
-      ["Jongeren uit Zuidoost", "(unusual suspects)"],
-      ["Inwoners van Amsterdam", "(bij tools die we opschalen)"],
+      ["Inwoners van stadsdeel Zuidoost", "ons focusgebied"],
+      ["Jongeren uit Zuidoost", "unusual suspects"],
+      ["Inwoners van Amsterdam", "bij tools die we opschalen"],
       [
         "Collega's",
-        "(professionals Ruimtelijke inrichting & maatschappelijke programmering)"
+        "professionals Ruimtelijke inrichting & maatschappelijke programmering"
       ],
-      ["Bloomberg Philanthropies programma", "(Wereldwijde kennisdeling)"]
+      ["Bloomberg Philanthropies programma", "Wereldwijde kennisdeling"]
     ]
   },
   "productsInfo": {

@@ -9,40 +9,60 @@ import contactTextIllustration from "../../../../assets/animations/illustration_
 import { scrollAnimationOnPosition } from "../../../../util/functions";
 
 export default function ContactTextIllustration() {
-    const [isMobile, setIsMobile] = useState(false);
-    const mobileFunction = useRef(false);
-    const contactTextAnimationRef = useRef();
+  const [isMobile, setIsMobile] = useState(false);
+  const mobileFunction = useRef(false);
+  const contactTextAnimationRef = useRef();
 
-    const changeDevice = () => {
-        setIsMobile(window.innerWidth <= 650 ? true : false);
+  const changeDevice = () => {
+    setIsMobile(window.innerWidth <= 700 ? true : false);
+  };
+
+  const scrollAnimation = () => {
+    if (mobileFunction.current) {
+      scrollAnimationOnPosition(
+        window.scrollY,
+        contactTextAnimationRef,
+        "contact-text-illustration",
+        25,
+        400,
+        100
+      );
+      return;
     }
+    scrollAnimationOnPosition(
+      window.scrollY,
+      contactTextAnimationRef,
+      "contact-section",
+      25,
+      300,
+      0
+    );
+  };
 
-    const scrollAnimation = () => {
-        if (mobileFunction.current) {
-            scrollAnimationOnPosition(window.scrollY, contactTextAnimationRef, "contact-text-illustration", 25, 400, 100);
-            return;
-        }
-        scrollAnimationOnPosition(window.scrollY, contactTextAnimationRef, "contact-section", 25, 300, 0);
-    }
+  useEffect(() => {
+    window.addEventListener("scroll", scrollAnimation);
 
-    useEffect(() => {
-        window.addEventListener("scroll", scrollAnimation);
+    changeDevice();
+    window.addEventListener("resize", changeDevice);
+  }, []);
 
-        changeDevice();
-        window.addEventListener("resize", changeDevice);
-    }, [])
+  useEffect(() => {
+    mobileFunction.current = isMobile;
+  }, [isMobile]);
 
-    useEffect(() => {
-        mobileFunction.current = isMobile;
-    }, [isMobile])
-
-    return (
+  return (
+    <>
+      {!isMobile ? (
         <Lottie
-            className="contact-text-illustration"
-            lottieRef={contactTextAnimationRef}
-            animationData={contactTextIllustration}
-            loop={false}
-            autoplay={false}
+          className="contact-text-illustration"
+          lottieRef={contactTextAnimationRef}
+          animationData={contactTextIllustration}
+          loop={false}
+          autoplay={false}
         />
-    )
+      ) : (
+        <></>
+      )}
+    </>
+  );
 }

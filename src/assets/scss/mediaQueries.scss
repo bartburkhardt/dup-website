@@ -1,0 +1,210 @@
+// 1200px
+@media all and (max-width: 1200px) {
+    :root {
+        --max-width: 900px;
+    }
+
+    // vvv specific vvv
+    .goal-text {
+        width: 519px;
+    }
+    .projectslist {
+        grid-template-columns: repeat(3, minmax(255px, 1fr)) !important;
+    }
+    .audience-reverse > .audience-left {
+        padding: 0 0 0 3rem !important;
+    }
+    .audience-left {
+        padding: 0 3rem 0 0;
+    }
+    .contact-form-idea form label textarea {
+        min-height: 100px;
+        max-height: 190px;
+    }
+    .contact-text {
+        height: 523px;
+    }
+}
+// 1000px
+@media all and (max-width: 1000px) {
+    :root {
+        --max-width: 700px;
+    }
+
+    // vvv specific vvv
+    .sub-header-container-text {
+        width: 600px;
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .imageline-wrapper {
+        height: 200px;
+        .imageline {
+            gap: 8px;
+        }
+    }
+    .title-container {
+        width: unset;
+        .title-text-container {
+            height: 72px !important;
+            .title-text {
+                font-size: 32px !important;
+                line-height: 36px !important;
+            }
+        }
+    }
+    .goal {
+        gap: 32px;
+        &-text {
+            width: unset;
+        }
+    }
+    .projectslist {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 60px 26px !important;
+        &-item {
+            max-height: 520px !important;
+        }
+    }
+    .audience-reverse > .audience-left {
+        padding: 0 0 0 2rem !important;
+    }
+    .audience-left {
+        padding: 0 2rem 0 0;
+    }
+}
+// 700px
+@media all and (max-width: 700px) {
+    :root {
+        --max-width: 84%;
+    }
+
+    // vvv specific vvv
+    .header-left {
+        gap: 20px;
+    }
+    .sub-header-container-text {
+        width: var(--max-width);
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    .imageline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        &::before {
+            width: 200px !important;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .title-text-container {
+        height: 32px !important;
+        .title-text {
+            font-size: 28px !important;
+            line-height: 32px !important;
+        }
+    }
+    .goal {
+        padding: 100px 0;
+        flex-direction: column;
+        &-text {
+            margin-top: 0;
+        }
+    }
+    .projectslist-wrapper {
+        h3 {
+            margin-bottom: 2rem;
+        }
+        .projectslist {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+    }
+    .audience {
+        padding-top: 100px;
+        flex-direction: column;
+        gap: 3rem;
+        &-reverse > .audience-left {
+            padding: 0 !important;
+        }
+        &-left {
+            padding: 0;
+            width: 100%;
+            position: relative;
+            top: unset;
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+        &-text {
+            width: 100%;
+            padding: 0 !important;
+        }
+    }
+    .contact-section-wrapper {
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        .contact-text {
+            width: 100%;
+            height: unset;
+            &-field {
+                margin: 0 0 32px 0;
+            }
+            .contact-form {
+                width: 100%;
+            }
+            &-illustration {
+                display: none;
+            }
+        }
+    }
+    .team {
+        padding: 100px 0;
+        &-members-item {
+            width: 50%;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    // vvv specific vvv
+    .team-members-item {
+        width: 100%;
+    }
+}
+
+.imageline::before,
+.imageline::after {
+    width: var(--max-width);
+}
+
+.goal {
+    max-width: var(--max-width);
+}
+
+.projectslist-wrapper {
+    max-width: var(--max-width);
+}
+
+.audience {
+    max-width: var(--max-width);
+}
+
+.contact-section {
+    max-width: var(--max-width) !important;
+}
+
+.team {
+    max-width: var(--max-width);
+}
+
+.footer {
+    max-width: var(--max-width);
+}
