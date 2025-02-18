@@ -37,6 +37,10 @@
       ]
     ]
   },
+  "productsInfo": {
+    "title": "Out products",
+    "readMore": "Read more"
+  },
   "products": [
     {
       "img": "future_mirror_1",
@@ -110,6 +114,9 @@
     },
     "send": "Verstuur",
     "requestmeeting": "Vraag een meeting aan"
+  },
+  "team": {
+    "title": "Our team"
   },
   "footer": {
     "over": "Over deze site",

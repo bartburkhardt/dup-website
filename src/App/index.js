@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Cookies from "../components/Cookies";
 
-import Home from "../pages/Home/HomePage";
+import Home from "../pages/Home";
 
 export default function App() {
   const { i18n } = useTranslation();

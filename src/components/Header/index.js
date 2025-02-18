@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./Header.scss";
+import "./index.scss";
 
 import Navigation from "../Navigation";
 

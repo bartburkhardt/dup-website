@@ -22,7 +22,7 @@ export default function ContactTextIllustration() {
             scrollAnimationOnPosition(window.scrollY, contactTextAnimationRef, "contact-text-illustration", 25, 400, 100);
             return;
         }
-        scrollAnimationOnPosition(window.scrollY, contactTextAnimationRef, "contact-section", 25, 300, 200);
+        scrollAnimationOnPosition(window.scrollY, contactTextAnimationRef, "contact-section", 25, 300, 0);
     }
 
     useEffect(() => {

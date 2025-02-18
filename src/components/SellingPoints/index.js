@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-
 import { useTranslation } from "react-i18next";
+import DOMPurify from "dompurify";
 
 import "./index.scss";
-import DOMPurify from "dompurify";
 
 export default function SellingPoints() {
   const { t } = useTranslation();

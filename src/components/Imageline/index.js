@@ -12,7 +12,7 @@ export default function Imageline() {
             <div
               className="imageline-image"
               style={{
-                background: `url(${require("../../assets/images/art-impression-bw.png")})`,
+                background: `url(${require("../../assets/images/imageline-" + i + ".png")})`,
               }}
               key={i}
             />

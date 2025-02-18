@@ -84,9 +84,7 @@ export default function Products() {
               <div
                 className="swiper-slide-left"
                 style={{
-                  backgroundImage: `url(${require(`../../assets/images/${
-                    products[item].img ? products[item].img : "art-impression"
-                  }.png`)})`,
+                  backgroundImage: `url()`,
                 }}
               >
                 <div className="swiper-slide-left-header">

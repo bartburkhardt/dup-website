@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.scss";
+import "./index.scss";
 
 import { useTranslation } from "react-i18next";
 

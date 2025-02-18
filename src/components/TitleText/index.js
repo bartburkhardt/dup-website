@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import "./TitleText.scss";
+import "./index.scss";
 
 export default function TitleText({
   useId,

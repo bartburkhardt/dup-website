@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./SubHeader.scss";
+import "./index.scss";
 
 import { useTranslation } from "react-i18next";
 
