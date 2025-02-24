@@ -86,7 +86,7 @@ export const teamMembers = [
     role: "Information Analyst",
   },
   {
-    name: "Bart Buckhardt",
+    name: "Bart Burkhardt",
     role: "XR Developer",
   },
   {
