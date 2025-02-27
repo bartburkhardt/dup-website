@@ -44,11 +44,13 @@
       "img": "digitalemaquette",
       "title": "Digitale Maquette",
       "text": "In samenwerking met 3D Amsterdam/Netherlands en met input van ontwikkelaars hebben we 7 nieuwbouwprojecten in de 3D omgeving van Amsterdam geplaatst zo kan een beter beeld verkregen worden hoe een gebouw er uiteindelijk uit komt te zien en past binnen de omgeving."
+      ,"xrid" : "1"
     },
     {
       "img": "ar",
-      "title": "AR/VR Participatie tool",
-      "text": "Via een combinatie van Augmented en Virtual reality technologieën gevoed met 3D modellen en 360 renders proberen grotere en bredere groep inwoners van de stad te bereiken, vooral ook degenen die normaal gesproken niet aan participatietrajecten deelnemen zoals jongeren. Zowel thuis als op een locatie zelf kun je met je mobiele telefoon in een webbrowser (dus geen app downloaden), de (mogelijke) toekomstige situatie zien."
+      "title": "AR Participatie tool",
+      "text": "Met Augmented reality technologieën proberen we een grotere en bredere groep inwoners van de stad te bereiken, vooral ook degenen die normaal gesproken niet aan participatietrajecten deelnemen zoals jongeren. Zowel thuis als op locatie zelf kun je met je telefoon in een webbrowser de (mogelijke) toekomstige situatie zien."
+      ,"xrid" : "2"
     },
     {
       "img": "curbanisme",

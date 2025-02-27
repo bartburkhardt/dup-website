@@ -1,0 +1,19 @@
+.xr-container {
+    margin-top: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    button {
+        background-color: #898989; // Blauwe achtergrond
+        color: #fff; // Witte tekst
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  }
+  

@@ -2,17 +2,21 @@ import React, { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Cookies from "../components/Cookies";
 
 import Home from "../pages/Home";
+import XR from "../pages/XR";
 
 export default function App() {
   const { i18n } = useTranslation();
   const lang = localStorage.getItem("lang");
+  
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname.startsWith("/xr");
 
   const setLanguage = () => {
     if (!lang) {
@@ -37,13 +41,14 @@ export default function App() {
 
   return (
     <div id="App">
-      <Header />
+      {!hideHeaderFooter && <Header />}
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/xr/:id" element={<XR />} />
       </Routes>
 
-      <Footer />
+      {!hideHeaderFooter && <Footer />}
       {/* <Cookies /> */}
     </div>
   );

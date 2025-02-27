@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import XRViewer from "../XRViewer";
+
 import "./index.scss";
 
 export default function NewProducts() {
@@ -28,6 +30,9 @@ export default function NewProducts() {
               <p>{product.text}</p>
               <div className="projectslist-item-more">
                 {t("productsInfo.readMore")}
+              </div>
+              <div>
+              {product.xrid && <XRViewer id={product.xrid} />}
               </div>
             </div>
           );

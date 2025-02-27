@@ -1,0 +1,11 @@
+{
+    "1": {
+      "modelUrl": "/assets/maquette.glb",
+      "modelIosUrl":"/assets/maquette.usdz",
+      "type": "ar"
+    },
+    "2": {
+      "image": "/assets/Wildeman_Pano_2.0_4K.png",
+      "type": "360"
+    }
+  }
