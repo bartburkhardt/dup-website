@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dup-website/static/css/main.55163bdf.css",
-    "main.js": "/dup-website/static/js/main.a62d4930.js",
+    "main.js": "/dup-website/static/js/main.560d6e98.js",
     "static/js/453.091d2eb9.chunk.js": "/dup-website/static/js/453.091d2eb9.chunk.js",
     "static/media/ar-square.png": "/dup-website/static/media/ar-square.9ff4e9fe405cf03c8b5f.png",
     "static/media/curbanisme-square.png": "/dup-website/static/media/curbanisme-square.9a23aaf1da7560823fd9.png",
@@ -38,11 +38,11 @@
     "static/media/Icon.svg": "/dup-website/static/media/Icon.cc703624808bcdf2ded74f6c35162bdb.svg",
     "static/media/chevron-right.svg": "/dup-website/static/media/chevron-right.1d7f478fa540266be6ef7f6e6add497e.svg",
     "main.55163bdf.css.map": "/dup-website/static/css/main.55163bdf.css.map",
-    "main.a62d4930.js.map": "/dup-website/static/js/main.a62d4930.js.map",
+    "main.560d6e98.js.map": "/dup-website/static/js/main.560d6e98.js.map",
     "453.091d2eb9.chunk.js.map": "/dup-website/static/js/453.091d2eb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55163bdf.css",
-    "static/js/main.a62d4930.js"
+    "static/js/main.560d6e98.js"
   ]
 }
